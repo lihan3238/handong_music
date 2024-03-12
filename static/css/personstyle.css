@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    align-items: center; /* 在纵向上居中 */
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* 将图片变成圆形 */
+    overflow: hidden; /* 确保图片不超出定义的圆形区域 */
+    margin-right: 20px; /* 调整头像和个人信息之间的间距 */
+}
+
+.profile-info {
+    flex: 1; /* 让个人信息占据剩余空间 */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>注册页面</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+    <script>
+        // 简单的模拟用户注册功能，实际中应该使用后端服务器来处理用户注册
+        function register() {
+            var username = document.getElementById("reg-username").value;
+            var password = document.getElementById("reg-password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            var email = document.getElementById("email").value;
+
+            // 在实际应用中，这里需要添加更多的注册验证逻辑
+            if (password !== confirmPassword) {
+                alert("密码和确认密码不匹配，请重新输入。");
+            } else {
+                // 在这里可以将用户的注册信息发送到后端服务器进行处理
+                alert("注册成功！"); // 此处应该重定向到登录页面或其他操作
+            }
+        }
+
+        // 返回登录界面
+        function redirectToLogin() {
+            window.location.href = "login.html"; // 登录页面的文件名
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+    <h1>注册</h1>
+    <form>
+        <label for="reg-username">用户名:</label>
+        <input type="text" id="reg-username" name="reg-username" required>
+        <br><br>
+
+        <label for="reg-password">密码:</label>
+        <input type="password" id="reg-password" name="reg-password" required>
+        <br><br>
+
+        <label for="confirm-password">确认密码:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br><br>
+
+        <label for="email">电子邮件:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <input type="button" value="注册" onclick="register()">
+    </form>
+    <div class="buttons">
+    <p><已有账号？<a href="javascript:void(0);" onclick="redirectToLogin()">返回登录</a></p>
+    </div>
+</div>
+</body>
+</html>

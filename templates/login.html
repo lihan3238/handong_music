@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录页面</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+    </style>
+    <script>
+        // 简单的模拟用户登录功能，实际中应该使用后端服务器来处理登录验证
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // 这里可以添加用户名和密码的验证逻辑
+            // 在这个示例中，假定用户名和密码都是 "admin"
+            if (username === "admin" && password === "admin") {
+                alert("登录成功！");
+            } else {
+                alert("登录失败，请检查用户名和密码。");
+            }
+        }
+
+        // 跳转到注册界面
+        function redirectToRegistration() {
+            window.location.href = "registration.html"; // 注册页面的文件名
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>登录</h1>
+        <form>
+            <label for="username">用户名:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+
+            <input type="button" value="登录" onclick="login()">
+        </form>
+        <br> <!-- 添加一个空行，使按钮下方有间隔 -->
+        <div class="buttons">
+            <a href="javascript:void(0);" onclick="redirectToRegistration()">注册</a>
+        </div>
+        <button onclick="returnToMainPage()">返回主页面</button>
+    </div>
+    
+   
+   
+    <script>
+        function returnToMainPage() {
+            window.location.href = "index.html"; // 设置为主页面的URL
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频展示</title>
+    <link rel="shortcut icon" href="/assets/imgs/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/public.css">
+</head>
+
+<body>
+    <div class="main-container full-height bg-light-gray">
+        <div class="softobar">
+            <div class="softobar-container">
+
+                <nav class="softobar-nav">
+                    <ul class="softobar-links">
+                        <li class="nav-item ">
+                            <a href="/" target="_self" rel="noopener">首页</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="/videoview" target="_blank" rel="noopener">视频欣赏</a>
+                        </li>
+                        <li class="nav-item  new-item ">
+                            <a href="https://clideo.com/video-editor" target="_blank" rel="noopener">课程教学</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="https://clideo.com/add-subtitles-to-video" target="_blank" rel="noopener">视频上传</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="https://clideo.com/video-maker" target="_blank" rel="noopener">Video Maker</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="https://clideo.com/meme-maker" target="_blank" rel="noopener">Meme Maker</a>
+                        </li>
+
+                        <li class="softobar-more hidden"><a href="#">更多</a>
+                            <ul class="hidden-links"></ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="second-navbar">
+            <div class="logo">
+                <img src="/assets/imgs/logo.png" alt="Logo">
+            </div>
+            <nav class="second-navbar-nav">
+                <ul class="second-navbar-links">
+                    <li class="nav-item">
+                        <a href="#" target="_blank" rel="noopener">商城</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" target="_blank" rel="noopener">聊天室</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" target="_blank" rel="noopener">音乐专区</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" target="_blank" rel="noopener">登录</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" target="_blank" rel="noopener">注册</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <button id="upload-button">上传视频</button>
+        <input type="file" id="upload" accept="video/*" style="display: none;">
+        <input type="text" id="video-title" placeholder="输入视频标题" style="display: none;">
+        <button id="upload-video" style="display: none;">上传</button>
+        <ul id="video-list"></ul>
+        <script src="/static/js/script.js"></script>
+    </div>
+</body>
+
+</html>

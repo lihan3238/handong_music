@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>注册页面</title>
     <style>
@@ -48,35 +49,39 @@
 
         // 返回登录界面
         function redirectToLogin() {
-            window.location.href = "login.html"; // 登录页面的文件名
+            window.location.href = "login"; // 登录页面的文件名
         }
     </script>
 </head>
+
 <body>
     <div class="form-container">
-    <h1>注册</h1>
-    <form>
-        <label for="reg-username">用户名:</label>
-        <input type="text" id="reg-username" name="reg-username" required>
-        <br><br>
+        <h1>注册</h1>
+        <form>
+            <label for="reg-username">用户名:</label>
+            <input type="text" id="reg-username" name="reg-username" required>
+            <br><br>
 
-        <label for="reg-password">密码:</label>
-        <input type="password" id="reg-password" name="reg-password" required>
-        <br><br>
+            <label for="reg-password">密码:</label>
+            <input type="password" id="reg-password" name="reg-password" required>
+            <br><br>
 
-        <label for="confirm-password">确认密码:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
-        <br><br>
+            <label for="confirm-password">确认密码:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <br><br>
 
-        <label for="email">电子邮件:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+            <label for="email">电子邮件:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
 
-        <input type="button" value="注册" onclick="register()">
-    </form>
-    <div class="buttons">
-    <p><已有账号？<a href="javascript:void(0);" onclick="redirectToLogin()">返回登录</a></p>
+            <input type="button" value="注册" onclick="register()">
+        </form>
+        <div class="buttons">
+            <p>
+                <已有账号？<a href="javascript:void(0);" onclick="redirectToLogin()">返回登录</a>
+            </p>
+        </div>
     </div>
-</div>
 </body>
+
 </html>

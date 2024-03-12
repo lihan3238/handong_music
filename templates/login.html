@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>登录页面</title>
     <style>
@@ -28,7 +29,6 @@
             justify-content: space-between;
             width: 100%;
         }
-        
     </style>
     <script>
         // 简单的模拟用户登录功能，实际中应该使用后端服务器来处理登录验证
@@ -47,10 +47,11 @@
 
         // 跳转到注册界面
         function redirectToRegistration() {
-            window.location.href = "registration.html"; // 注册页面的文件名
+            window.location.href = "registration"; // 注册页面的文件名
         }
     </script>
 </head>
+
 <body>
     <div class="form-container">
         <h1>登录</h1>
@@ -71,13 +72,14 @@
         </div>
         <button onclick="returnToMainPage()">返回主页面</button>
     </div>
-    
-   
-   
+
+
+
     <script>
         function returnToMainPage() {
-            window.location.href = "index.html"; // 设置为主页面的URL
+            window.location.href = "index"; // 设置为主页面的URL
         }
     </script>
 </body>
+
 </html>
